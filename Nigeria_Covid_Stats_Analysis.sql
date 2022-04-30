@@ -127,3 +127,7 @@ SELECT CDN.date, CDN.population, CVN.total_vaccinations, (CVN.total_vaccinations
     JOIN covid_vaccinations_nigeria CVN
     ON CDN.date = CVN.date
 ORDER BY 1;
+
+CREATE VIEW V10 AS
+SELECT *
+    FROM covid_deaths_Nigeria;
