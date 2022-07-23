@@ -1,5 +1,7 @@
 # SQL Exploratory Data Analysis of Nigeria Covid-19 Data.
 
+![alt](https://github.com/jjjeorgee/Portfolio-Projects/blob/61b007560bfa539d208dbbb13c6f207e77911f54/wew.PNG)
+
 ##### Visualization: [Tableaupublic.com](https://public.tableau.com/app/profile/oladimeji.olaniyan/viz/NigeriaCOVID-19Data/Dashboard1)
 
 ##### Abstract
