@@ -15,5 +15,5 @@ SQL
 #### Authors
 > 👤 Olaniyan Oladimeji
 - Github: [jjjeorgee](https://github.com/jjjeorgee)
-- Linkedin: [Olaniyan Mumini Oladimeji](https://www.linkedin.com/mwlite/in/oladimeji-olaniyan-a3a114170)
+- Linkedin: [Olaniyan Oladimeji](https://www.linkedin.com/mwlite/in/oladimeji-olaniyan-a3a114170)
 - Twitter: [jjjeorge_v3](https://www.twitter.com/jjjeorge_v3)
