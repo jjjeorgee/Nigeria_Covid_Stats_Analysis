@@ -1,4 +1,4 @@
-# Nigeria Covid Statistics Analysis
+# SQL Exploratory Data Analysis of Nigeria Covid Statistics Analysis
 
 ##### Visualization: [Tableaupublic.com](https://public.tableau.com/app/profile/oladimeji.olaniyan/viz/NigeriaCOVID-19Data/Dashboard1)
 
