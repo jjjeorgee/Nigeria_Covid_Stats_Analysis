@@ -1,6 +1,6 @@
 # Nigeria Covid Statistics Analysis
 
-##### Visualization: https://public.tableau.com/app/profile/oladimeji.olaniyan/viz/NigeriaCOVID-19Data/Dashboard1
+##### Visualization: [Tableaupublic.com](https://public.tableau.com/app/profile/oladimeji.olaniyan/viz/NigeriaCOVID-19Data/Dashboard1)
 
 ##### Abstract
    This is a project utilizing SQL to perform an exploratory analysis of COVID-19 data 
