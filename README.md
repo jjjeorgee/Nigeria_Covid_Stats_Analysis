@@ -14,8 +14,6 @@ This analysis is aimed at exploring a few key metrics.
 
 - The national infection rate collated with the national death rate.
 
-- Vaccinated population of each state of the country.
-
 ### Data wrangling 
 Before getting to any of these objectives, the data provided must first be cleaned and organized. I worked with 3 major datasets
 - Global COVID-19 dataset from [ourworldindata.org](https://ourworldindata.org/covid-deaths)
@@ -110,7 +108,7 @@ GROUP BY EDI.region;
 
 > The SQL code takes columns from a table named *extra death info* in order to get a percentage of total deaths per state.
 
-- And this is a visualization of this analysis in tableau ![2D1B1127-3396-4C45-9C4C-F4F4DAF27ABE](https://user-images.githubusercontent.com/98137996/180660220-10461076-5f6d-4ddd-b0c8-b5bb0058662f.jpeg)
+- And this is a visualization of this analysis in Tableau ![2D1B1127-3396-4C45-9C4C-F4F4DAF27ABE](https://user-images.githubusercontent.com/98137996/180660220-10461076-5f6d-4ddd-b0c8-b5bb0058662f.jpeg)
 As may be observed from the visualization;
 - Edo had the highest deaths per infections of all the states.
 
@@ -123,15 +121,36 @@ As may be observed from the visualization;
 > - access to proper medical facilites
 > - early acess to vaccines.
 
+Objective lll
+- This was aimed at comparing the national infection rate and death rate. This comparison is done with data collected from February 2020 to March 2022.
+- The SQL code used may be observed below;
+
+```
+SELECT date, population, total_cases, (total_cases/population)*100 AS infected_population_percentage
+	FROM covid_deaths_Nigeria
+ORDER BY 1, 2;
+
+```
+> This is SQL code showing the infected percentage of the country's total population.
+
+```
+SELECT date, total_cases, total_deaths, (total_deaths/total_cases)*100 AS infected_population_percentage
+	FROM covid_deaths_Nigeria
+ORDER BY 1, 2;
+```
+> This is SQL code showing the death percentage of the country's total infected population
+
 ### Conclusion 
+The datasets had a lot of stories to tell and there were a lot more metrics to analyze, but those are beyond the scope of this exploratory analysis.
+
 For a more detailed look at the metrics analyzed above, the dashboard containing them is available to be viewed here on [Tableaupublic.com](https://public.tableau.com/app/profile/oladimeji.olaniyan/viz/NigeriaCOVID-19Data/Dashboard1).
 
 All the SQL code i used for the exploratory analysis may be viewed in this [repository](https://github.com/jjjeorgee/Nigeria_Covid_Stats_Analysis/blob/main/Nigeria%20COVID%20data(SQL%20Data%20Exploration%20Project).sql)
 
-#### Written in
+### Written in
 SQL
 
-#### Authors
+### Authors
 > 👤 Olaniyan Oladimeji
 - Github: [jjjeorgee](https://github.com/jjjeorgee)
 - Linkedin: [Olaniyan Oladimeji](https://www.linkedin.com/mwlite/in/oladimeji-olaniyan-a3a114170)
