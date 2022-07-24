@@ -10,8 +10,13 @@ Key metrics have been noted from the available data, and a Tableau dashboard con
 The SQL code utilized in performing the exploration can be viewed in this [repository](https://github.com/jjjeorgee/Nigeria_Covid_Stats_Analysis/blob/main/Nigeria%20COVID%20data(SQL%20Data%20Exploration%20Project).sql)
 
 #### Data wrangling 
+This was primarily done using SQL.
 
-#### Visualization: [Tableaupublic.com](https://public.tableau.com/app/profile/oladimeji.olaniyan/viz/NigeriaCOVID-19Data/Dashboard1)
+#### Exploratory data analysis
+
+#### Visualization 
+ This was done using tableau to create a dashboard of some key metrics.
+This dashboard is available here on [Tableaupublic.com](https://public.tableau.com/app/profile/oladimeji.olaniyan/viz/NigeriaCOVID-19Data/Dashboard1)
 
 #### Written in
 SQL
