@@ -74,7 +74,7 @@ GROUP BY EDI.region;
 ```
 > This code uses SQL joins to conbine columns from two tables, in order to get a percentage of the total number of infected persons in each state.
  
- And this is a visualization of this analysis in tableau![BC978FCB-D91A-44CF-84FE-4753C3824FD3](https://user-images.githubusercontent.com/98137996/180646585-5b3e93aa-8459-46b7-b2ed-23031c26839b.jpeg)
+- And this is a visualization of this analysis in tableau![BC978FCB-D91A-44CF-84FE-4753C3824FD3](https://user-images.githubusercontent.com/98137996/180646585-5b3e93aa-8459-46b7-b2ed-23031c26839b.jpeg)
  
 As maybe observed from the visualization; 
 - Lagos had the highest infection rate, more than 0.6% if its population being infected
@@ -92,9 +92,10 @@ GROUP BY EDI.region;
 
 ```
 
->The SQL code takes columns from a table named *extra death info* in order to get a percentage of total deaths per state.
+> The SQL code takes columns from a table named *extra death info* in order to get a percentage of total deaths per state.
 
-And this is a visualization of this analysis in tableau 
+- And this is a visualization of this analysis in tableau ![2D1B1127-3396-4C45-9C4C-F4F4DAF27ABE](https://user-images.githubusercontent.com/98137996/180660220-10461076-5f6d-4ddd-b0c8-b5bb0058662f.jpeg)
+
 
 #### Visualization 
  This was done using tableau to create a dashboard of some key metrics.
