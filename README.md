@@ -2,23 +2,23 @@
 
 ![alt](https://github.com/jjjeorgee/Portfolio-Projects/blob/61b007560bfa539d208dbbb13c6f207e77911f54/wew.PNG)
 
-#### Abstract
+### Abstract
    This is a project utilizing SQL to perform an exploratory analysis of COVID-19 data from the month of February 2020 to the month of March 2022, specifically from Nigeria.
    
 This data is taken from multiple sources chief of which is [OurworldinData.org](https://ourworldindata.org/). 
 
-#### Objectives
+### Objectives
 This analysis is aimed at exploring a few key metrics.
 
 - The infection rate in each state collated with each state's total population.
 
-- The death rate on each state collated with each states infected population.
+- The death rate in each state collated with each state's infected population.
 
 - The national infection rate collated with the national death rate.
 
 - Vaccinated population of each state of the country.
 
-#### Data wrangling 
+### Data wrangling 
 Before getting to any of these objectives, the data provided must first be cleaned and organized. I worked with 3 major datasets
 - Global COVID-19 dataset from [ourworldindata.org](https://ourworldindata.org/covid-deaths)
 
@@ -58,10 +58,12 @@ Also, some date columns in the datasets were not formatted is the standard SQL f
 
 
 
-#### Exploratory data analysis
-There were alot of interesting metrics to be extracted from the available datasets, but my analysis was focused on the afore-mentioned onjectives. 
+### Exploratory data analysis
+There were alot of interesting metrics to be extracted from the available datasets, but my analysis was focused on the aforementioned objectives. 
 
-- The first objective was an analysis of the infection rate in each state, collated with the state's population. This is the SQL code I used for the analysis
+#### Objective l
+- The first objective was an analysis of the infection rate in each state, collated with each state's total population. 
+- This is the SQL code I used for the analysis;
 
 ```
 SELECT EDI.region, sum(EDI.infected) AS total_infected, EVI.population, (sum(EDI.infected)/EVI.population)*100 AS infection_percentage_per_state
@@ -74,10 +76,25 @@ GROUP BY EDI.region;
  
  And this is a visualization of this analysis in tableau![BC978FCB-D91A-44CF-84FE-4753C3824FD3](https://user-images.githubusercontent.com/98137996/180646585-5b3e93aa-8459-46b7-b2ed-23031c26839b.jpeg)
  
-As maybe observed from the visualization, 
+As maybe observed from the visualization; 
 - Lagos had the highest infection rate, more than 0.6% if its population being infected
 - Kogi had the lowest infection rate, as the state reported no infection cases.
 
+#### Objective ll
+- The second objective was an analysis of the death rate in each state, collated with each state's infected population.
+- This is the SQL code I used for the analysis;
+
+```
+
+SELECT EDI.region, SUM(EDI.infected) AS total_infected, SUM(EDI.deaths) AS total_dead, (SUM(EDI.deaths)/SUM(EDI.infected))*100 AS death_percentage_per_state
+	from extra_death_info EDI
+GROUP BY EDI.region;
+
+```
+
+>The SQL code takes columns from a table named *extra death info* in order to get a percentage of total deaths per state.
+
+And this is a visualization of this analysis in tableau 
 
 #### Visualization 
  This was done using tableau to create a dashboard of some key metrics.
