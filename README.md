@@ -10,7 +10,27 @@ Key metrics have been noted from the available data, and a Tableau dashboard con
 The SQL code utilized in performing the exploration can be viewed in this [repository](https://github.com/jjjeorgee/Nigeria_Covid_Stats_Analysis/blob/main/Nigeria%20COVID%20data(SQL%20Data%20Exploration%20Project).sql)
 
 #### Data wrangling 
-This was primarily done using SQL.
+This was primarily done using SQL. 
+The dataset initially included a lot of redundant or unwanted columns.
+And so with the aid of SQL, I was able to retrieve only the data needed for the analysis.
+
+```
+SELECT CDN.date, CDN.new_cases, CDN.total_cases, CDN.new_deaths, CDN.total_deaths, CDN.population,
+	   EDI.region, EDI.infected, EDI.deaths, EDI.cured,
+			CVN.new_vaccinations,
+				EVI.total_vaccinated_population 
+					FROM covid_deaths_Nigeria AS CDN
+						JOIN extra_death_info AS EDI
+					ON CDN.date = EDI.date 
+				JOIN covid_vaccinations_nigeria AS CVN
+			ON CDN.date = CVN.date
+		JOIN extra_vaccination_info AS EVI
+    ON EDI.region = EVI.region
+ORDER BY 1;
+
+```
+
+The code above shows how I was able to do this with *SQL Joins* and *Embedded queries*
 
 #### Exploratory data analysis
 
