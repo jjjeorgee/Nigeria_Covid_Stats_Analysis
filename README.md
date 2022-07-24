@@ -52,7 +52,7 @@ ORDER BY 1;
 
 ```
 
->The code above shows how I was able to do this with *SQL Joins* and *Embedded queries*
+> The code above shows how I was able to do this with *SQL Joins* and *Embedded queries*
 
 Also, some date columns in the datasets were not formatted is the standard SQL format of DD-MM-YYYY and this had to corrected using SQL code.
 
@@ -77,7 +77,7 @@ GROUP BY EDI.region;
 - And this is a visualization of this analysis in tableau![BC978FCB-D91A-44CF-84FE-4753C3824FD3](https://user-images.githubusercontent.com/98137996/180646585-5b3e93aa-8459-46b7-b2ed-23031c26839b.jpeg)
  
 As maybe observed from the visualization; 
-- Lagos had the highest infection rate, more than 0.6% if its population being infected
+- Lagos had the highest infection rate, with more than 0.6% if its population being infected
 - Kogi had the lowest infection rate, as the state reported no infection cases.
 
 #### Objective ll
@@ -97,9 +97,8 @@ GROUP BY EDI.region;
 - And this is a visualization of this analysis in tableau ![2D1B1127-3396-4C45-9C4C-F4F4DAF27ABE](https://user-images.githubusercontent.com/98137996/180660220-10461076-5f6d-4ddd-b0c8-b5bb0058662f.jpeg)
 
 
-#### Visualization 
- This was done using tableau to create a dashboard of some key metrics.
-This dashboard is available here on [Tableaupublic.com](https://public.tableau.com/app/profile/oladimeji.olaniyan/viz/NigeriaCOVID-19Data/Dashboard1)
+### Conclusion 
+For a more detailed look at the metrics analyzed above, the dashboard containing them is available to be viewed here on [Tableaupublic.com](https://public.tableau.com/app/profile/oladimeji.olaniyan/viz/NigeriaCOVID-19Data/Dashboard1)
 
 #### Written in
 SQL
