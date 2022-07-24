@@ -90,8 +90,11 @@ GROUP BY EDI.region;
 - And this is a visualization of this analysis in Tableau![BC978FCB-D91A-44CF-84FE-4753C3824FD3](https://user-images.githubusercontent.com/98137996/180646585-5b3e93aa-8459-46b7-b2ed-23031c26839b.jpeg)
  
 As maybe observed from the visualization; 
-- Lagos had the highest infection rate, with more than 0.6% if its population total infected
+- Lagos had the highest infection rate, with more than 0.6% if its total population being infected. This is mostly likely the result of Lagos being the most populated state of the country.
+
 - Kogi had the lowest infection rate, as the state reported no infection cases.
+
+- Most of the reported cases of infections are from Lagos and The Federal Capital Territory. 
 
 #### Objective ll
 - The second objective was an analysis of the death rate in each state, collated with each state's infected population.
@@ -110,9 +113,12 @@ GROUP BY EDI.region;
 - And this is a visualization of this analysis in tableau ![2D1B1127-3396-4C45-9C4C-F4F4DAF27ABE](https://user-images.githubusercontent.com/98137996/180660220-10461076-5f6d-4ddd-b0c8-b5bb0058662f.jpeg)
 As may be observed from the visualization;
 - Edo had the highest deaths per infections of all the states.
+
 - Anambra had the lowest deaths per infections of all the states.
-- Kogi does not appear the chart as it had recorded no infection cases which could result in deaths
-- Lagos, although having infection rate, has one of the lowest death rates which could a product of multiple factors such as; 
+
+- Kogi does not appear on the chart as it had recorded no infection cases which could result in deaths.
+
+- Lagos, although having the highest infection rate, has one of the lowest death rates which could be a product of multiple factors such as; 
 > - high number of unreported or misreported deaths
 > - access to proper medical facilites
 > - early acess to vaccines.
