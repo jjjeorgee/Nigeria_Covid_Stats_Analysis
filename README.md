@@ -140,6 +140,12 @@ ORDER BY 1, 2;
 ```
 > This is SQL code showing the death percentage of the country's total infected population
 
+- This data is visualized below![6DB5EBE9-B7C5-45B6-BBA8-D731890B18CB](https://user-images.githubusercontent.com/98137996/180663039-ac5f0190-043f-4d8a-aef3-87ca8c65d945.jpeg)
+As may be observed from the visualization
+- Infection cases peaked in early 2020 when the pandemic was announced, and started declining mid 2020 at the start of 2022
+
+- Deaths peaked in 2022 and started declining with decreasing infection cases.
+
 ### Conclusion 
 The datasets had a lot of stories to tell and there were a lot more metrics to analyze, but those are beyond the scope of this exploratory analysis.
 
