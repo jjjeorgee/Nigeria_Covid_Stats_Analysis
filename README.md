@@ -26,11 +26,15 @@ Before getting to any of these objectives, the data provided must first be clean
 
 - COVID-19 vaccinations dataset from [africaopendata.org](https://africaopendata.org/dataset/covid-19-data)
 
-The wrangling was done with the Microsoft Excel soreadsheet tool which was used to covert some xlsx files to the CSV format, and also with SQL.
+The wrangling was done with the Microsoft Excel spreadsheet tool which was used to covert some xlsx files to the CSV format.
 
-Majority of the data wrangling was  done using SQL. 
-The dataset initially included a lot of redundant or unwanted columns,
-and so with the aid of SQL, I was able to retrieve only the data needed for the analysis.
+I also used Microsoft Excel to trim some excessively large files to make inporting them into MYSQL Server for analysis much easier. 
+
+Some columns which had the wrong datatype were also fixed using Microsoft Excel.
+
+The rest of the data wrangling was  done using SQL. 
+The dataset initially included a lot of redundant or unwanted columns, which were not trimmed in Microsoft Excel. 
+And so with the aid of SQL, I was able to retrieve only the data needed for the analysis.
 
 ```
 SELECT CDN.date, CDN.new_cases, CDN.total_cases, CDN.new_deaths, CDN.total_deaths, CDN.population,
@@ -50,8 +54,30 @@ ORDER BY 1;
 
 >The code above shows how I was able to do this with *SQL Joins* and *Embedded queries*
 
+Also, some date columns in the datasets were not formatted is the standard SQL format of DD-MM-YYYY and this had to corrected using SQL code.
+
+
+
 #### Exploratory data analysis
-There were alot of interesting metrics to be extracted from the available datasets, but my analysis was focused certain onjectives. 
+There were alot of interesting metrics to be extracted from the available datasets, but my analysis was focused on the afore-mentioned onjectives. 
+
+- The first objective was an analysis of the infection rate in each state, collated with the state's population. This is the SQL code I used for the analysis
+
+```
+SELECT EDI.region, sum(EDI.infected) AS total_infected, EVI.population, (sum(EDI.infected)/EVI.population)*100 AS infection_percentage_per_state
+	from extra_death_info EDI
+		JOIN extra_vaccination_info EVI
+	ON EDI.region = EVI.region
+GROUP BY EDI.region;
+```
+> This code uses SQL joins to conbine columns from two tables, in order to get a percentage of the total number of infected persons in each state.
+ 
+ And this is a visualization of this analysis in tableau![BC978FCB-D91A-44CF-84FE-4753C3824FD3](https://user-images.githubusercontent.com/98137996/180646585-5b3e93aa-8459-46b7-b2ed-23031c26839b.jpeg)
+ 
+As maybe observed from the visualization, 
+- Lagos had the highest infection rate, more than 0.6% if its population being infected
+- Kogi had the lowest infection rate, as the state reported no infection cases.
+
 
 #### Visualization 
  This was done using tableau to create a dashboard of some key metrics.
