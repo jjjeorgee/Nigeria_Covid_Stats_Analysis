@@ -65,7 +65,7 @@ ORDER BY YEAR(date);
 
 ```
 
-Also, some date columns in the datasets were not formatted is the standard SQL format of DD-MM-YYYY and this had to corrected using SQL code.
+Also, some date columns in the datasets were not in the standard SQL format of DD-MM-YYYY and this had to corrected using SQL code.
 
 
 
