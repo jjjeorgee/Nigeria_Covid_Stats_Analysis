@@ -92,7 +92,7 @@ As maybe observed from the visualization;
 
 - Kogi had the lowest infection rate, as the state reported no infection cases.
 
-- Most of the reported cases of infections are from Lagos and The Federal Capital Territory. 
+- Most of the reported cases of infections were from Lagos and The Federal Capital Territory. 
 
 #### Objective ll
 - The second objective was an analysis of the death rate in each state, collated with each state's infected population.
