@@ -70,7 +70,7 @@ Also, some date columns in the datasets were not in the standard SQL format of D
 
 
 ### Exploratory data analysis
-There were alot of interesting metrics to be extracted from the available datasets, but my analysis was focused on the aforementioned objectives. 
+There were a lot of interesting metrics to be extracted from the available datasets, but my analysis was focused on the aforementioned objectives. 
 
 #### Objective l
 - This was an analysis of the infection rate in each state, collated with each state's total population. 
