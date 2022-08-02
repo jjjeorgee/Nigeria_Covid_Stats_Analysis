@@ -142,9 +142,9 @@ ORDER BY 1, 2;
 
 - This data is visualized below![6DB5EBE9-B7C5-45B6-BBA8-D731890B18CB](https://user-images.githubusercontent.com/98137996/180663039-ac5f0190-043f-4d8a-aef3-87ca8c65d945.jpeg)
 As may be observed from the visualization
-- Infection cases peaked in early 2020 when the pandemic was announced, and started declining mid 2020 at the start of 2022
+- Death rate rose rapidly from early 2020, and peaked in mid 2020 around when the pandemic was announced, with the infection rate rapidly climbing, and has been perpetually declining since then.
 
-- Deaths peaked in 2022 and started declining with decreasing infection cases.
+- Infection rate was continously rising from the start of 2020 and peaked in early 2022, before it started declining with decreasing death rate.
 
 ### Conclusion 
 The datasets had a lot of stories to tell and there were a lot more metrics to analyze, but those are beyond the scope of this exploratory analysis.
