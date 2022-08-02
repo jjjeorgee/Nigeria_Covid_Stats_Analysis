@@ -85,7 +85,8 @@ GROUP BY EDI.region;
 ```
 > This code uses SQL joins to combine columns from two tables, in order to get a percentage of the total number of infected persons in each state.
  
-- And this is a visualization of this analysis in Tableau![BC978FCB-D91A-44CF-84FE-4753C3824FD3](https://user-images.githubusercontent.com/98137996/180646585-5b3e93aa-8459-46b7-b2ed-23031c26839b.jpeg)
+- And this is a visualization of this analysis in Tableau![Screenshot 2022-08-02 182111](https://user-images.githubusercontent.com/98137996/182436131-5117a0b4-20c2-411a-82dd-3cea87704ea7.png)
+
  
 As maybe observed from the visualization; 
 - Lagos had the highest infection rate, with more than 0.6% if its total population being infected. This is mostly likely the result of Lagos being the most populated state of the country.
