@@ -22,7 +22,7 @@ Before getting to any of these objectives, the data provided must first be clean
 
 - COVID-19 vaccinations dataset from [africaopendata.org](https://africaopendata.org/dataset/covid-19-data)
 
-The wrangling was done with the Microsoft Excel spreadsheet tool which was used to covert some xlsx files to the CSV format.
+The wrangling was done with the Microsoft Excel spreadsheet tool which was used to convert some xlsx files to the CSV format.
 
 Microsoft Excel was also used to trim some excessively large files to make inporting them into MYSQL Server for analysis much easier. 
 
