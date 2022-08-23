@@ -152,7 +152,7 @@ The datasets had a lot of stories to tell and there were a lot more metrics to a
 
 For a more detailed look at the metrics analyzed above, the dashboard containing them is available to be viewed here on [Tableaupublic.com](https://public.tableau.com/app/profile/oladimeji.olaniyan/viz/NigeriaCOVID-19Data/Dashboard1).
 
-All the SQL code i used for the exploratory analysis may be viewed in this [repository](https://github.com/jjjeorgee/Nigeria_Covid_Stats_Analysis/blob/main/Nigeria%20COVID%20data(SQL%20Data%20Exploration%20Project).sql)
+All the SQL code I used for the exploratory analysis may be viewed in this [repository](https://github.com/jjjeorgee/Nigeria_Covid_Stats_Analysis/blob/main/Nigeria%20COVID%20data(SQL%20Data%20Exploration%20Project).sql)
 
 ### Written in
 SQL
