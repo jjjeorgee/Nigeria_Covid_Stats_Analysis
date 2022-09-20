@@ -1,6 +1,6 @@
 # SQL Exploratory Data Analysis of Nigeria Covid-19 Data.
 
-![alt](https://github.com/jjjeorgee/Portfolio-Projects/blob/61b007560bfa539d208dbbb13c6f207e77911f54/wew.PNG)
+![wew](https://user-images.githubusercontent.com/98137996/191383836-2b53deb5-677a-4720-b51d-46c00b72f39b.png)
 
 ### Abstract
    This is a project utilizing SQL to perform an exploratory analysis of COVID-19 data from the month of February 2020 to the month of March 2022. The data used for this analysis focuses on COVID-19 cases in Nigeria, and is taken from multiple sources chief of which is [ourworldinData.org](https://ourworldindata.org/). 
